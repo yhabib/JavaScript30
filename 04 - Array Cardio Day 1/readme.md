@@ -1,0 +1,1 @@
+4. JStricks: console.table for json objects and console.log({obj})

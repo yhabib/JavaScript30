@@ -1,0 +1,1 @@
+8. Array destructuring and basic HTML Canvas

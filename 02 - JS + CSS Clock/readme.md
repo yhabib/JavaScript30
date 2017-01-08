@@ -1,0 +1,1 @@
+2. ES6 compatibility inside browsers

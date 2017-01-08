@@ -4,7 +4,7 @@ The Konami Code( コナミコマンド) is a cheat code that appears in many Kon
 The following sequence of buttons on the game controller to enable a kindo of cheat:
 [↑↑↓↓←→←→ba](http://konamicodesites.com/)
 
-## Core
+## Notes
 * Key Sequence Detection
 * Trimming and array to contain the last x elemnts:
 ```javascript

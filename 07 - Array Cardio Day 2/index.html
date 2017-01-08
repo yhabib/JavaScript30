@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪💪</title>
+</head>
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    // ## Array Cardio Day 2
+
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+
+    console.log("1. Is at least one person 19??");
+    const sol1 = people.some(p => (new Date().getFullYear() - p.year) >= 19);
+    console.log({sol1});
+    
+    console.log("2. Is everyone adult(older than 19)??");
+    const sol2 = people.every(p => (new Date().getFullYear() - p.year) >= 19);
+    console.log(sol2);
+    
+
+    console.log("3. Find the comment with the ID of 823423");
+    const sol3 = comments.find(comment => comment.id === 823423);
+    console.log(sol3);
+    
+    console.log("4. Delete the comment with the ID of 823423");
+    const index = comments.findIndex(comment => comment.id === 823423);
+    // delete comments[sol4];   This leaves an epty place on the array, and it is also not efficient
+    // comments.splice(index, 1);  // Not neat to change the same array
+    const newComments = [         // Functional programming
+      ...comments.slice(0, index),
+      ...comments.slice(index + 1, comments.length)
+    ];
+    console.table(comments);
+    console.table(newComments);
+    
+
+  </script>
+</body>
+</html>

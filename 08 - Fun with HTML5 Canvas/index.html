@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+  const canvas = document.querySelector('canvas'),
+        ctx = canvas.getContext('2d');
+  
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  ctx.strokeStyle = "#BADA55";
+  ctx.lineJoin = "round";
+  ctx.lineCap = "round";
+  ctx.lineWidth = 10;
+  ctx.globalCompositeOperation = 'multiply';
+
+  let isDrawing = false,
+      lastX = 0,
+      lastY = 0,
+      hue = 0,
+      direction = true;
+
+
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mousedown', mouseDown);
+  canvas.addEventListener('mouseup', () => isDrawing = false );
+  canvas.addEventListener('mouseout', () => isDrawing = false );
+
+  function draw(e) {
+    if(!isDrawing) return;
+
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    [lastX, lastY] = [e.offsetX, e.offsetY];  // Destructuring an erray
+    
+    
+    hue++;
+    
+    if(ctx.lineWidth === 80 || ctx.lineWidth === 1)
+      direction = !direction;
+    direction ? ctx.lineWidth++ : ctx.lineWidth--;
+  }
+
+  function mouseDown(e) {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+  }
+
+</script>
+
+<style>
+  html, body {
+    margin:0;
+  }
+  canvas {
+    border: 1px solid black;
+  }
+</style>
+
+</body>
+</html>

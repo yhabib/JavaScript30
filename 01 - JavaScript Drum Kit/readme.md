@@ -8,7 +8,7 @@ The index page displays a collection of div elements, each containing a letter t
 * **JS**
     - Using the data-atribute, the audio and the key are bound.
     - Ex:
-    - ```javascript 
+      ```javascript 
       // 'e' is the event object
       const audio = document.querySelector(`audio[data-key="${e.charCode}"]`),
 		    key = document.querySelector(`div[data-key="${e.charCode}"]`);
@@ -17,7 +17,6 @@ The index page displays a collection of div elements, each containing a letter t
 		    audio.currentTime = 0;
 			audio.play();
       ```
-
 * **CSS**
     - The playing class uses a scale transformation to give the effect of poping
 

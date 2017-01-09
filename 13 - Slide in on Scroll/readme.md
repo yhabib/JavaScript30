@@ -3,7 +3,8 @@ When scrolling through the page, the images will slide in as soon as the user re
 
 ## Notes
 * There are some calculations to know where exactly the user is reference to an image.
-    - ```javascript
+
+    ```javascript
       // half way through the image
       const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
       // bottom of the image
@@ -12,9 +13,10 @@ When scrolling through the page, the images will slide in as soon as the user re
       const isHalfShown = slideInAt > sliderImage.offsetTop;
       // did not he already pass the image's heigh??
       const isNotScrolledPast = window.scrollY < imageBottom;
-      ```
+    ```
 * Debounce function limits the rate at which a function can fire.  Ensures that a given task doesn't fire so often that it bricks browser performance. [More info](https://davidwalsh.name/javascript-debounce-function)
-    - ```javascript
+
+    ```javascript
       function debounce(func, wait = 20, immediate = true) {
         let timeout;
         return function () {

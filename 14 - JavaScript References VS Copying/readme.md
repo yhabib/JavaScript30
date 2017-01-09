@@ -1,5 +1,5 @@
 # Objects and Arrays - JavaScript References VS Copying
-Comparation about how JS treats refenrece and copied variables.
+Comparation about how JS treats referenced and copied variables.
 ## Notes
 In JS there are two flavor of types:
 

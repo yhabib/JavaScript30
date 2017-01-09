@@ -60,27 +60,27 @@
 	<audio data-key="76" src="sounds/tink.wav"></audio>
 
 	<script>
-		function keyPressed(e) {
-			const audio = document.querySelector(`audio[data-key="${e.charCode}"]`),
-				  key = document.querySelector(`div[data-key="${e.charCode}"]`);
+		(function () {
+			function keyPressed(e) {
+				const audio = document.querySelector(`audio[data-key="${e.charCode}"]`),
+					key = document.querySelector(`div[data-key="${e.charCode}"]`);
 
-			if (!audio) return;     // Not a valid key
+				if (!audio) return;     // Not a valid key
 
-			key.classList.add("playing");
-			audio.currentTime = 0;
-			audio.play();
-		};
+				key.classList.add("playing");
+				audio.currentTime = 0;
+				audio.play();
+			};
 
-		function removeStyle(e) {
-			if(e.type !== "transitionend")	return;
-			e.target.classList.remove("playing");
-		}
+			function removeStyle(e) {
+				if (e.type !== "transitionend") return;
+				e.target.classList.remove("playing");
+			}
 
-		window.addEventListener('transitionend', removeStyle); // His alternative was to bind the event to only the components that have a .key class
-		window.addEventListener('keypress', keyPressed);
+			window.addEventListener('transitionend', removeStyle); // His alternative was to bind the event to only the components that have a .key class
+			window.addEventListener('keypress', keyPressed);
+		})()
 	</script>
-
-
 </body>
 
 </html>

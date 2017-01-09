@@ -11,7 +11,7 @@ The following types are considered primitive in JavaScript:
 * Null
 * Undefined
 
-These types are always manipulated by **value**. This means that if we define a variable as of theses types, and then we pass it to a function or create a new variable from it, this *copy* variable will will have a copy of the value of the orignal variable. Any change to one of these will have no repercusion for the other one. 
+These types are always manipulated by **value**. This means that if we define a variable as of these types, and then we pass it to a function or create a new variable from it, this *copy* variable will will have a copy of the value of the orignal variable. Any change to one of these will have no repercusion for the other one. 
 For example:
 
 ```javascript
@@ -23,11 +23,12 @@ For example:
 ```
 
 ### **Object Type**
-Leaving aside that in JS almost everything is an object, we can define that what it isn't a **primitive type** it's an **Object type**. Like for example:
+Leaving aside that in JS almost everything is an object, we can define that what it isn't a **primitive type** it's an **object type**. Like for example:
 * Object
 * Array
 * Function
 * Set
+* ...
 
 These *objects* are passed/treated by reference. This means that now what it's passed to a *copy variable* is the address of this variable instead of its value. So modifying the copy will modify the original variable.
 Lets see how this works with arrays:

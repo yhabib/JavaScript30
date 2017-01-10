@@ -182,6 +182,30 @@
     </li>
 
 <script>
+(function() {
+  const timeAttributes = Array.from(document.querySelectorAll('[data-time]'));
+  
+  const totalSeconds = timeAttributes
+    .reduce((a, b) => {
+      b = b.dataset.time.split(':').map(parseFloat);
+      return a + b[0]*60 + b[1];
+    }, 0);
+
+
+
+  console.log(convertSecondsIntoHoursMinutesAndSeconds(totalSeconds));
+
+  function convertSecondsIntoHoursMinutesAndSeconds(total) {    
+    let seconds = total; 
+    const hours = Math.floor(total / 3600);
+    seconds = total % 3600;
+
+    const minutes = Math.floor(seconds / 60);
+    seconds = seconds % 60;
+
+    return `${hours}:${minutes}:${seconds}`
+  }    
+})()
 </script>
 </body>
 </html>

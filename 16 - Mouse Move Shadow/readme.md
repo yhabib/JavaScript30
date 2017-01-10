@@ -33,7 +33,7 @@ When the user scrolls a text shadow effect is attached to the *headear* inside a
                 y = y + e.target.offsetTop;
             }
         ```
-        - **walk** variable is used to calculate the stretch distance for the element's shadow on both axis.
+        - **walk** is used to calculate the stretch distance for the element's shadow on both axis.
         ```javascript
             const walk = 100; // 100px
             const xWalk = (x / width * walk) - (walk / 2);  // Normaliza and then rest half the walk

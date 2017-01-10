@@ -3,6 +3,7 @@ When the user scrolls a text shadow effect is attached to the *headear* inside a
 
 ## Notes
 * HTML gloabl attribute **contenteditable** defines that the content of an element is editable.
+
     ```html
         <h1 contenteditable>🔥WOAH!</h1>
     ```
@@ -32,13 +33,14 @@ When the user scrolls a text shadow effect is attached to the *headear* inside a
                 y = y + e.target.offsetTop;
             }
         ```
-        - The **walk** variable is used to calculate the stretch distance for the element's shadow on both axis.
+        - **walk** variable is used to calculate the stretch distance for the element's shadow on both axis.
         ```javascript
             const walk = 100; // 100px
             const xWalk = (x / width * walk) - (walk / 2);  // Normaliza and then rest half the walk
             const yWalk = (y / height * walk) - (walk / 2); 
         ```
 * ES6 destruturing:
+
     ```javascript
         const width = this.offsetWidth,
               height = this.offsetHeight;

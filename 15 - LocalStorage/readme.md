@@ -48,4 +48,4 @@ We also work here with **event delegation**, that happends when we want to attac
 * click
 
 ## To Do's
-* Clear button: Clears all the checkboxes
+1. [ ] Clear button: Clears all the checkboxes

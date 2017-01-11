@@ -23,11 +23,11 @@ All the images are from [Death To Stock](http://deathtothestockphoto.com/).
 11. [x] ~~[Custom Video Player](./11\ -\ Custom\ Video\ Player/)~~
 12. [x] ~~[Key Sequence Detection](./12\ -\ Key\ Sequence\ Detection/)~~
 13. [x] ~~[Slide in on Scroll](./13\ -\ Slide\ in\ on\ Scroll/)~~
-14. [x] ~~[JavaScript References vs. Copying](./14\ -\ JavaScript\ References\ vs.\ Copiying/)~~
+14. [x] ~~[JavaScript References vs. Copying](./14\ -\ JavaScript\ References\ VS\ Copying/)~~
 15. [x] ~~[LocalStorage](./15\ -\ LocalStorage/)~~
 16. [x] ~~[Mouse Move Shadow](./16\ -\ Mouse\ Move\ Shadow/)~~
 17. [x] ~~[Sort Without Articles](./17\ -\ Sort\ Without\ Articles/)~~
-18. [x] ~~[Adding Up Times with Reduce](./18\ -\ Adding\ Up\ Times\ With\ Reduce/)~~
+18. [x] ~~[Adding Up Times with Reduce](./18\ -\ Adding\ Up\ Times\ with\ Reduce/)~~
 19. [ ] Webcam Fun
 20. [ ] Speech Detection
 21. [ ] Geolocation

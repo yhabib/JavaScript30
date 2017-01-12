@@ -28,8 +28,8 @@ All the images are from [Death To Stock](http://deathtothestockphoto.com/).
 16. [x] ~~[Mouse Move Shadow](./16\ -\ Mouse\ Move\ Shadow/)~~
 17. [x] ~~[Sort Without Articles](./17\ -\ Sort\ Without\ Articles/)~~
 18. [x] ~~[Adding Up Times with Reduce](./18\ -\ Adding\ Up\ Times\ with\ Reduce/)~~
-19. [x] ~~[Webcam Fun](./19\ Webcam\ Fun/)~~
-20. [x] ~~[Speech Detection](.20\ Speech\ Detection/)~~
+19. [x] ~~[Webcam Fun](./19\ -\ Webcam\ Fun/)~~
+20. [x] ~~[Speech Detection](.20\ -\ Speech\ Detection/)~~
 21. [ ] Geolocation
 22. [ ] Follow Along Link Highlighter
 23. [ ] Speech Synthesis

@@ -31,13 +31,13 @@ function paintToCanvas() {
     const height = video.videoHeight;
     const width = video.videoWidth;
 
-    // Canvas should have the same size as its input(webcam)
+    // canvas should have the same size as its input(webcam)
     canvas.height = height;
     canvas.width = width;
 
-    // Case I want to stop it sometime
+    // case I want to stop it sometime
     return setInterval(() => {
-        // From top left corner to bottom right corner
+        // from top left corner to bottom right corner
         ctx.drawImage(video, 0, 0, width, height);
         
         // take pixels out in a special array for big data
@@ -55,7 +55,7 @@ function paintToCanvas() {
 }
 
 function takePhoto() {
-    // Reproduce sound 
+    // reproduce sound 
     snap.currentTime = 0;
     snap.play();
 
@@ -67,7 +67,7 @@ function takePhoto() {
     link.href = data;
     link.setAttribute('download', 'handsome');
     link.innerHTML =`<img src="${data}" alt="Handsome man" />`;
-    // jquery prepend
+    // like jquery prepend
     strip.insertBefore(link, strip.firstChild);
 }
 

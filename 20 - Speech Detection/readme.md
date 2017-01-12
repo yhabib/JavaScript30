@@ -5,39 +5,38 @@ the user stops talking a new we will append a new **p** element.
 
 
 ## Notes
-The **[Web Speech API]**[1] has two components: the **[SpeechRecognition]]**[2] and the **[SpeechSythesis]**[3]. In this first project we are focusing in the first component.
+The **[Web Speech API][1]** has two components: the **[SpeechRecognition][2]** and the **[SpeechSythesis][3]**. In this first project we are focusing in the first component.
 
 We initialize it like this:
+```javascript
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-    ```javascript
-        window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-        const recognition = new SpeechRecognition();
-        recognition.interimResults = true;  //As you are speaking igves values rather than waiting till you end speaking
-    ```
-    
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;  //As you are speaking igves values rather than waiting till you end speaking       
+```
+       
 The first line is due that *Chrome* uses a prefix in its name.
 
 Handling the *result* event is the most important part of this exercise. It is in **e.results** were we can find most of the relevant information. This is an array 
 where we can find the **transcript**, a value between [0, 1] that shows the **confidence** of the transcription and a **isFinal** boolean which tells you if the user stopped
 talking to start in a new paragraph.
 
-    ```javascript
-        recognition.addEventListener('result', e => {
-            const transcript = Array.from(e.results)
-                .map(result => result[0])
-                .map(result => result.transcript)
-                .join('');
+```javascript
+recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)
+        .map(result => result[0])
+        .map(result => result.transcript)
+        .join('');
 
-            p.textContent = transcript;
-            if(e.results[0].isFinal) {
-                p = document.createElement('p');
-                words.appendChild(p);
-            }
-        });
-    ```
+    p.textContent = transcript;
+    if(e.results[0].isFinal) {
+        p = document.createElement('p');
+        words.appendChild(p);
+    }
+});
+```
 
-Finally we have to append a new element to the **div**, and rebind the listener to the **result** event.
+Finally we append a new element to the **div** and rebind the listener to the **result** event.
 
 
 
@@ -46,7 +45,7 @@ Finally we have to append a new element to the **div**, and rebind the listener 
 * end -> We use it to rebind it 😀
 
 ## To Do's
-1 [ ] Implement some functionality like Siri: weather, or nba ...
+* [ ] Implemente some basic functionality like Siri
 
 [1]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
 [2]:https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition

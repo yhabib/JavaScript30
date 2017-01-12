@@ -44,7 +44,9 @@ Finally we append a new element to the **div** and rebind the listener to the **
 * end -> We use it to rebind it 😀
 
 ## To Do's
-* [ ] Implemente some basic functionality like Siri
+* [x] Implemente some basic functionality like Siri: 
+    - Siri weather
+    - Siri NBA
 
 [1]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
 [2]:https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition

@@ -35,6 +35,11 @@
       p = document.createElement('p');
       words.appendChild(p);
     }
+    // Siri functionality
+    if(transcript.includes('Siri') && transcript.includes('weather'))
+      window.open('https://weather.com/');
+    else if(transcript.includes('Siri') && transcript.includes('NBA'))
+      window.open('https://nba.com/');
   });
   // When result is finish unbinds the event here we bind it again
   recognition.addEventListener('end', recognition.start);

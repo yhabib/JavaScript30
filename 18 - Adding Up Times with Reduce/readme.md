@@ -23,4 +23,4 @@ An *ul* representing a playlist where each *li* represents a video and it has a 
                 return a + b[0]*60 + b[1];
             }, 0);
     ```
-* Also there is also a function that converts from seconds to a hours:minutes:seconds format.
+* There is also a function that converts from seconds to a hours:minutes:seconds format.

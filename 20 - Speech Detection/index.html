@@ -13,36 +13,36 @@
   // chrome && firefox differences
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
+  // Initialize the voice recognition
   const recognition = new SpeechRecognition();
   recognition.interimResults = true;  //As you are speaking igves values rather than waiting till you end speaking
 
+  // We append the new paragraph to the words div
   let p = document.createElement('p');
   const words = document.querySelector('.words');
   words.appendChild(p);
 
-  // Once the result is finish unbinds the listener
+  recognition.start();
+
   recognition.addEventListener('result', e => {
-    const transcript = Array.from(e.results)
+    const transcript = Array.from(e.results) 
       .map(result => result[0])
       .map(result => result.transcript)
       .join('');
-
+    
     p.textContent = transcript;
     if(e.results[0].isFinal) {
       p = document.createElement('p');
       words.appendChild(p);
     }
   });
-  // When reslt is finish unbinds the event
+  // When result is finish unbinds the event here we bind it again
   recognition.addEventListener('end', recognition.start);
-
-  recognition.start();
-
-
 </script>
 
 
-  <style>
+<style>
+  * {box-sizing: border-box; }
     html {
       font-size: 10px;
     }
@@ -65,6 +65,8 @@
       background-size: 100% 3rem;
       position: relative;
       line-height:3rem;
+      max-height: 90vh;
+      overflow-y: auto;
     }
     p {
       margin: 0 0 3rem 0;

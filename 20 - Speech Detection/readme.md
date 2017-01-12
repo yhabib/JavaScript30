@@ -5,6 +5,8 @@ the user stops talking a new we will append a new **p** element.
 
 
 ## Notes
+**This exercise needs to be run in a server in order to be able to have access to the media devices!!**
+
 The **[Web Speech API][1]** has two components: the **[SpeechRecognition][2]** and the **[SpeechSythesis][3]**. In this first project we are focusing in the first component.
 
 We initialize it like this:

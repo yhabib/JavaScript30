@@ -9,13 +9,12 @@ The **[Web Speech API][1]** has two components: the **[SpeechRecognition][2]** a
 
 We initialize it like this:
 ```javascript
+// Chrome special prefix
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.interimResults = true;  //As you are speaking igves values rather than waiting till you end speaking       
 ```
-       
-The first line is due that *Chrome* uses a prefix in its name.
 
 Handling the *result* event is the most important part of this exercise. It is in **e.results** were we can find most of the relevant information. This is an array 
 where we can find the **transcript**, a value between [0, 1] that shows the **confidence** of the transcription and a **isFinal** boolean which tells you if the user stopped

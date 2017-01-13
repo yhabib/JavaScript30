@@ -22,7 +22,7 @@ function keyPressed(e) {
 	audio.play();
 };
 ``` 
-* Css-transition-end: remove style.
+* css-transition-end: remove style.
 
 ```javascript
 function removeStyle(e) {

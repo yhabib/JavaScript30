@@ -5,11 +5,11 @@ The idea behind this first project is to imitate the functionality of a keyboard
 
 We make use of two new concepts of HTML5:
 
-* The HTML **[data-\*][1]** attribute allows us to store custom data on any HTML element. Each *div.key* and *audio* element have a data-key attribute that binds them together.
+* The HTML **[data-\*][1]** attribute allows us to store custom data on any HTML element. Each `div.key` and `audio` element have a `data-key` attribute that binds them together.
 * The **[audio](https://developer.mozilla.org/en/docs/Web/HTML/Element/audio)** tag offers an api that makes it simple to reproduce in the browser audio files.
 
 
-The logic behind is very simple, we have to listen for two events:
+The logic behind it is very simple, we have to listen for two events:
 
 * User presses a key: get audio element, add class to the key and play it.
 ```javascript 

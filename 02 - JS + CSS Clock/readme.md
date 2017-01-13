@@ -18,7 +18,7 @@ function getTime() {
     hourHand.style.transform = `translateX(5rem) rotate(${hours}deg)`;
 }
 ```
-The *lag* variable is related to the css code, where we have to define an intial rotation of 90° due the
+The `lag` variable is related to the css code, where we have to define an intial rotation of 90° due the
 default horizontal position of elements in html
 ```css
 .hand {

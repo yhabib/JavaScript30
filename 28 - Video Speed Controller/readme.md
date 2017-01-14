@@ -1,12 +1,11 @@
 # Video Speed Controll
-In this one, we build hoverable video speed controller, with a rage that goes
-from 0.4 to 4.
+In this one, we build a hoverable video speed controller, with a rage between 0.4 and 4.
 
 ## Notes
 There is not much to commet, except for the calculation of the position of the mouse inside
-the *speed-bar* (`const y`).
-* The `e.pageY` returns the position of the mouse relative to the top edge of doc.
-* The `this.offsetTop` returns the offset of the `.speed-bar` to the top of the doc.
+the *speed-bar* ( the `y` variable).
+* The `e.pageY` returns the position of the mouse relative to the top edge of the document.
+* The `this.offsetTop` returns the offset of the `.speed-bar` to the top of the document.
 
 ```javascript
 function handleMove(e) {

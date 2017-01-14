@@ -1,5 +1,5 @@
 # Video Speed Controll
-In this one, we build a hoverable video speed controller, with a rage between 0.4 and 4.
+In this one, we build a hoverable video speed controller, with a range between 0.4 and 4.
 
 ## Notes
 There is not much to commet, except for the calculation of the position of the mouse inside

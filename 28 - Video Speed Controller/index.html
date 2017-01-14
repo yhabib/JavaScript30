@@ -26,6 +26,8 @@
 			speed.addEventListener('mousemove', handleMove);
 
 			function handleMove(e) {
+				// position of the mouse relative to the top edge of 
+				// the doc - position of the element to the top
 				const y = e.pageY - this.offsetTop;
 				const percent = y / this.offsetHeight;
 				const min = 0.4;

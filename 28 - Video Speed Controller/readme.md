@@ -5,11 +5,12 @@ from 0.4 to 4.
 ## Notes
 There is not much to commet, except for the calculation of the position of the mouse inside
 the *speed-bar* (`const y`).
+* The `e.pageY` returns the position of the mouse relative to the top edge of doc.
+* The `this.offsetTop` returns the offset of the `.speed-bar` to the top of the doc.
 
 ```javascript
 function handleMove(e) {
-	// position of the mouse relative to the top edge of 
-	// the doc - position of the element to the top
+	// this === .speed-bar
 	const y = e.pageY - this.offsetTop,
 		   percent = y / this.offsetHeight,
 		   min = 0.4,

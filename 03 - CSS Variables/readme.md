@@ -60,4 +60,4 @@ const inputsArr2 = [...inputs];                // ES6 spread operator
  
 ## Events
 
-* change:  `<input>`, `<select>` and `<textarea>` fire it when a change to the element's value is committed by the user
+* **change:** input element's value chages

@@ -34,7 +34,7 @@ All the images are from [Death To Stock](http://deathtothestockphoto.com/).
 22. [x] ~~[Follow Along Link Highlighter](./22\ -\ Follow\ Along\ Link\ Highlighter)~~
 23. [x] ~~[Speech Synthesis](./23\ -\ Speech\ Synthesis)~~
 24. [x] ~~[Sticky Nav](./24\ -\ Sticky\ Nav)~~
-25. [x] ~~[Event Capture, Propagation, Bubbling, and Once](./25\ -\ Event\ Capture,\ Propagation,\ Bubbling,\ and\ Once)~~
+25. [x] ~~[Event Capture, Propagation, Bubbling, and Once](./25\ -\ Event\ Capture\,\ Propagation\,\ Bubbling\ and\ Once)~~
 26. [x] ~~[Stripe Follow Along Nav](./26\ -\ Stripe\ Follow\ Along\ Nav)~~
 27. [x] ~~[Click and Drag](./27\ -\ Click\ and\ Drag)~~
 28. [x] ~~[Video Speed Controller](./28\ -\ Video\ Speed\ Controller)~~

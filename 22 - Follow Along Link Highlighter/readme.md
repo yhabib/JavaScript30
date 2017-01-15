@@ -5,19 +5,20 @@ So in this first exercise, we build a **link higlighter** which will transtition
 to another with a smoothie effect adding a class to the link.
 
 ## Notes
-w
+
 1. We start creating an `span` element, adding it the `higlight` class and [appending][1] it to the `body`.
 2. Then when the event is triggered we have to calculate the position of the *trigger* and add these
 values to the `highlight` class.
+
    ```javascript
 	function highlightLink() {
 	   const linkCoords = this.getBoundingClientRect();
-		const coords = {
-				width: linkCoords.width,
-				height: linkCoords.height,
-				top: linkCoords.top + window.scrollY,
-				left: linkCoords.left + window.scrollX
-			};
+	   const coords = {
+			width: linkCoords.width,
+			height: linkCoords.height,
+			top: linkCoords.top + window.scrollY,
+			left: linkCoords.left + window.scrollX
+		};
 
 		highlight.style.width = `${coords.width}px`;
 		highlight.style.height = `${coords.height}px`;

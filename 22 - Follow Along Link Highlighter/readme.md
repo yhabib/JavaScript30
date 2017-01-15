@@ -1,6 +1,6 @@
 # Follow Along Link Highlighter
 
-This is the first part of a project where we want to build a replica of the navigation bar from **[Stripe]**(https://stripe.com).
+This is the first part of a project where we want to build a replica of the navigation bar from **[Stripe](https://stripe.com)**.
 So in this first exercise, we build a **link higlighter** which will transtition from one link
 to another with a smoothie effect adding a class to the link.
 

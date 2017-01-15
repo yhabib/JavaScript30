@@ -37,4 +37,4 @@ When scrolling through the page, the images will slide in as soon as the user re
       ```
 
 ## Events
-* scroll
+* **scroll**

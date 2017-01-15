@@ -48,5 +48,5 @@ When the user scrolls a text shadow effect is attached to the *headear* inside a
     ```
 
 ## Events
-* mousemove
+* **mousemove**
 

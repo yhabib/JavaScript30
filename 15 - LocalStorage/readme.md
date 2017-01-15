@@ -44,8 +44,8 @@ We also work here with **event delegation**, that happends when we want to attac
 **Note:** *If one wants to do it smarter so calling populateList will only update a new elements instead of recreating again the whole innerHtml -> AngularJs, React, ... two way bindings ...*
 
 ## Events
-* submit -> in the callback the **this** object is the form
-* click
+* **submit:** in the callback the **this** object is the form
+* **click**
 
 ## To Do's
 1. [ ] Clear button: Clears all the checkboxes

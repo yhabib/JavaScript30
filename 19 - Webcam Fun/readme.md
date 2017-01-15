@@ -85,7 +85,7 @@ function takePhoto() {
 must be tied to a security origin like https or localhost.
 
 ## Events
-* canplay
+* **canplay:** the browser can start playing the specified audio/video (when it has buffered enough to begin).
 
 ## ToDo's
 * [ ] Use of *debugger*

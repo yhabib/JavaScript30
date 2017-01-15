@@ -66,5 +66,5 @@ This time the CSS file is where almost all of the magic happens. We add three ef
 	```
 
 ## Events
-* scroll
+* **scroll**
 

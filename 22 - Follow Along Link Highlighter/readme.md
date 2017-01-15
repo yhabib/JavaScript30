@@ -31,7 +31,7 @@ What is important about the `function` above is:
 we achieve a smoothier effect when we move from a link to another one.
 
 ## Events
-* mouseenter: user enters with the mouse inside the trigger element
+* **mouseenter:** user enters with the mouse inside the trigger element
 
 [1]:https://developer.mozilla.org/en/docs/Web/API/Node/appendChild
 [2]:https://developer.mozilla.org/en/docs/Web/API/Element/getBoundingClientRect

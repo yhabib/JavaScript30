@@ -1,6 +1,7 @@
 # CSS Variables
 
-The purpose of this challenge is to learn about the **css variables**. You may think that you have already use them in **LESS** or **SASS** but what we are going to see here are variables that will live after the preprocessor xD
+The purpose of this challenge is to learn about the **css variables**. You may think that you have already work with them in **LESS** or **SASS** but what we are going to see here are variables 
+that will live after preprocessing our code.
 
 ## Notes
 
@@ -11,12 +12,12 @@ In LESS or SASS you can find something like this:
 @link-color:        #428bca; // sea blue
 @link-color-hover:  darken(@link-color, 10%);
 ```
-Make no mistake once they go through the preprocessor they will have a fix value. Instead of that, with **css variables** you can change its value during the lifecycle of your program.
+But make no mistake once they go through the preprocessor they will have a fixxed value. Instead of that, with **css variables** you can change its value during the lifecycle of your program.
 
 
-So how do we work with them?
+**So how do we work with them?**
 
-1. We have to assign them into a component:
+1. We have to assign them to a component:
     ```css
     :root {
         --spacing: 10px;
@@ -25,7 +26,7 @@ So how do we work with them?
     }
     ```
 
-2. Applying to a style:
+2. Then we use them through our styles:
     ```css
     img {
         width: 95%;
@@ -37,7 +38,7 @@ So how do we work with them?
       }
     ```
  
-3. Use them in JS:
+3. And we also access them in our JS:
     ```javascript
     const inputs = document.querySelectorAll('.controls input');
     function handleUpdate() {
@@ -50,7 +51,8 @@ So how do we work with them?
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
     ```
  
-**NOTE**: Running `.querySelector()` or `.querySelectorAll()` we recieve a data structure that looks like an `Array` but it is't. The `listNode` object that we obtain have a reduced API. If you prefer working with arrays there are two options:
+**NOTE**: Calling `.querySelector()` or `.querySelectorAll()` we recieve a data structure that looks like an `Array` but it is't. 
+The `listNode` object that we obtain has a reduced API, so in case that you prefer to work with arrays there are two ways for the conversion:
  
 ```javascript
 const inputs = document.querySelectorAll('.controls input');

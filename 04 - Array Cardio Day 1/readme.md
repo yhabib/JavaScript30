@@ -1,21 +1,22 @@
 # Array Cardio Day 1
 
 In this first cardio day we make use of some of the Array build-in methods:
-* map
-* sort
-* reduce
+
+* [map]()
+* [sort]()
+* [reduce]()
 
 ## Notes
 
 When working with **sort**, two directions:
 * Ascendent: 1 indicates that goes down in the array:
 
-	```javscript
+	```javascript
 	arr.sort((a, b) => a > b ? 1 : -1);
 	```
 * Descendent: -1 indicates that goes up in the array:
 
-	```javscript
+	```javascript
 	arr.sort((a, b) => a > b ? -1 : 1);
 	```
 

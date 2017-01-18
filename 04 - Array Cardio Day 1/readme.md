@@ -2,9 +2,9 @@
 
 In this first cardio day we make use of some of the Array build-in methods:
 
-* [map]()
-* [sort]()
-* [reduce]()
+* [map](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* [sort](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+* [reduce](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 ## Notes
 

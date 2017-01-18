@@ -2,10 +2,10 @@
 
 The continuation of the array workout takes us to use some new build-in methods:
 
-* [some]()
-* [every]()
-* [find]()
-* [findIndex]()
+* [some](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+* [every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+* [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+* [findIndex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
 
 ## Notes
 

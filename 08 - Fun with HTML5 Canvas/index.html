@@ -25,7 +25,6 @@
       hue = 0,
       direction = true;
 
-
   canvas.addEventListener('mousemove', draw);
   canvas.addEventListener('mousedown', mouseDown);
   canvas.addEventListener('mouseup', () => isDrawing = false );
@@ -39,8 +38,7 @@
     ctx.moveTo(lastX, lastY);
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
-    [lastX, lastY] = [e.offsetX, e.offsetY];  // Destructuring an erray
-    
+    [lastX, lastY] = [e.offsetX, e.offsetY];
     
     hue++;
     

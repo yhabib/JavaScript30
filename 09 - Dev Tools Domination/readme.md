@@ -28,7 +28,7 @@ Some nice `console.` tips to improve the way we debug our JS code.
    fetch('https://api.github.com/users/yhabib')
       .then(data => data.json())
       .then(data => {
-         console.timeEnd('fetching data');
-         console.log(data);
+         console.log(data);                 
+         console.timeEnd('fetching data');  // fetching data: 461.976ms
       });
 	```

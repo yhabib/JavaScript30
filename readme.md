@@ -38,5 +38,5 @@ All the images are from [Death To Stock](http://deathtothestockphoto.com/).
 26. [x] ~~[Stripe Follow Along Nav](./26\ -\ Stripe\ Follow\ Along\ Nav)~~
 27. [x] ~~[Click and Drag](./27\ -\ Click\ and\ Drag)~~
 28. [x] ~~[Video Speed Controller](./28\ -\ Video\ Speed\ Controller)~~
-29. [ ] Countdown Timer
-30. [ ] Whack A Mole
+29. [x] ~~Countdown Timer~~
+30. [x] ~~Whack A Mole~~

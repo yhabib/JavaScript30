@@ -86,8 +86,8 @@ a:hover {
 	font-size: 142px;
 	font-family: 'Amatic SC', cursive;
 	text-align: center;
-	margin-top: 90px;
-	margin-bottom: 130px;
+	margin-top: 70px;
+	margin-bottom: 140px;
 	text-shadow: 10px 10px 10px #000;
 }
 
@@ -128,7 +128,7 @@ a:hover {
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 20px 0;
-	padding-left: 30px;
+	padding-left: 30px;	
 }
 
 a {
@@ -137,7 +137,7 @@ a {
 	cursor: pointer;
 }
 
-a:hover {
+.links .link:hover {
 	color: rgba(5, 5, 5, 1);
 	font-size: 18px;
 	font-weight: bold;

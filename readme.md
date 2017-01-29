@@ -4,7 +4,7 @@
 
 No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 
-Each exercise has its note with thoughts, discoveries, ...
+Each exercise has its own notes with my thoughts, interesting snippets, ...
 Original files from @wesbos and solutions can be found [here](https://github.com/wesbos/JavaScript30).
 All the images are from [Death To Stock](http://deathtothestockphoto.com/).
 

@@ -88,6 +88,7 @@ a:hover {
 	text-align: center;
 	margin-top: 90px;
 	margin-bottom: 130px;
+	text-shadow: 10px 10px 10px #000;
 }
 
 .left img {

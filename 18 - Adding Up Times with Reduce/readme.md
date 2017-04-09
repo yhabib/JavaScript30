@@ -2,7 +2,7 @@
 An *ul* representing a playlist where each *li* represents a video and it has a *data-time* attribute with its duration(string). Calculate the total time in *hours:minutes:seconds*
 
 ## Notes:
-* Two implementations, one is self-describing the other is serious stuf 😝
+* Two implementations, one is self-describing the other is serious stuff 😝
     ```javascript
         const timeAttributes = Array.from(document.querySelectorAll('[data-time]'));
   
